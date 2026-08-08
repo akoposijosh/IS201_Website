@@ -99,3 +99,38 @@ a:visited {
 .navbar-nav .nav-link.active:hover {
   color: #f4c95d !important;
 }
+
+/* ===========================================
+   Force navbar links to stay visible (no hamburger)
+   and shrink them on smaller screens
+   =========================================== */
+.navbar-toggler {
+  display: none;
+}
+
+.navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    gap: 4px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 11px;
+    padding: 4px 6px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-nav .nav-link {
+    font-size: 9px;
+    padding: 3px 4px !important;
+  }
+}

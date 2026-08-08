@@ -93,8 +93,8 @@ body {
 }
 
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #b08d57;
@@ -146,10 +146,70 @@ body {
 .menu-link:hover {
     color: #1b2a41;
 }
-.center {
-    text-align: center;
-}
-.mission-label {
-    font-weight: bold;
-    font-size: 20px;
+
+/* ===========================================
+   Responsive layout for mobile / narrow screens
+   =========================================== */
+@media (max-width: 768px) {
+
+    .common {
+        position: static;
+        width: auto;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        border-radius: 0;
+        margin: 0 0 15px 0;
+    }
+
+    .header {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 0 15px;
+    }
+
+    .topbar-left {
+        gap: 10px;
+    }
+
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-name {
+        font-size: 1.2rem;
+    }
+
+    .topbar-nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .leftmenu,
+    .rightmenu {
+        width: auto;
+        padding: 15px;
+    }
+
+    .mainbody {
+        padding: 15px;
+    }
+
+    .footer {
+        position: static;
+        margin-top: 15px;
+        border-radius: 0;
+    }
+
+    body {
+        padding-bottom: 0;
+    }
 }
