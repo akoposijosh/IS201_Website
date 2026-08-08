@@ -6,14 +6,6 @@
 
 .resume-navbar {
     background-color: #1b2a41;
-    border-bottom: 3px solid #b08d57;/* ===========================================
-   Resume page - Bootstrap-based layout
-   Custom color/spacing rules only.
-   Bootstrap's grid handles all responsiveness.
-   =========================================== */
-
-.resume-navbar {
-    background-color: #1b2a41;
     border-bottom: 3px solid #b08d57;
     padding: 12px 0;
 }
@@ -92,73 +84,4 @@
 .mission-label {
     font-weight: bold;
     font-size: 20px;
-}
-    padding: 12px 0;
-}
-
-.profile-pic {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #b08d57;
-}
-
-.profile-name {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1.3rem;
-}
-
-.resume-navbar .nav-link {
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.resume-navbar .nav-link.active,
-.resume-navbar .nav-link:hover {
-    color: #b08d57;
-}
-
-.resume-body {
-    background-color: #eef1f5;
-    padding: 30px 15px 60px 15px;
-}
-
-.resume-side-panel {
-    background-color: #f7f8fa;
-    border: 1px solid #d8dbe0;
-    border-radius: 4px;
-    padding: 20px 15px;
-    margin-bottom: 20px;
-    align-self: flex-start;
-}
-
-.resume-main {
-    background-color: #ffffff;
-    border: 1px solid #d8dbe0;
-    border-radius: 4px;
-    padding: 24px;
-    margin-bottom: 20px;
-}
-
-.menu-link {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #b08d57;
-    text-decoration: none;
-    margin-bottom: 12px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.menu-link:hover {
-    color: #1b2a41;
-}
-
-.resume-footer {
-    background-color: #1b2a41;
-    color: #ffffff;
-    font-size: 13px;
 }
