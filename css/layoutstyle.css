@@ -288,3 +288,15 @@
     }
 
 }
+.resume-navbar .navbar-toggler {
+    display: none;
+}
+
+.resume-navbar .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+}
+
+.resume-navbar .navbar-nav {
+    flex-direction: row;
+}
