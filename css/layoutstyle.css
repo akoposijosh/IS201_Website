@@ -1,7 +1,12 @@
 /* ===========================================
-   Resume page - Bootstrap-based layout
-   Custom color/spacing rules only.
-   Bootstrap's grid handles all responsiveness.
+   Resume Page
+   Bootstrap-based layout
+   Custom CSS for colors, spacing, and layout
+   =========================================== */
+
+
+/* ===========================================
+   Navigation
    =========================================== */
 
 .resume-navbar {
@@ -27,6 +32,7 @@
 .resume-navbar .nav-link {
     color: #ffffff;
     font-weight: bold;
+    transition: color 0.2s ease;
 }
 
 .resume-navbar .nav-link.active,
@@ -34,26 +40,76 @@
     color: #b08d57;
 }
 
+
+/* ===========================================
+   Main Resume Background
+   =========================================== */
+
 .resume-body {
     background-color: #eef1f5;
     padding: 30px 15px 60px 15px;
+    min-height: 100vh;
 }
 
-.resume-side-panel {
-    background-color: #f7f8fa;
-    border: 1px solid #d8dbe0;
-    border-radius: 4px;
-    padding: 20px 15px;
-    margin-bottom: 20px;
-    align-self: flex-start;
-}
+
+/* ===========================================
+   Main Resume Container
+   =========================================== */
 
 .resume-main {
     background-color: #ffffff;
     border: 1px solid #d8dbe0;
-    border-radius: 4px;
-    padding: 24px;
-    margin-bottom: 20px;
+    border-radius: 6px;
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* ===========================================
+   Mission Statement
+   =========================================== */
+
+.resume-intro {
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #d8dbe0;
+}
+
+.resume-intro h2 {
+    color: #1b2a41;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.resume-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+/* ===========================================
+   Contact Information
+   =========================================== */
+
+.contact-section {
+    padding: 25px 0;
+    border-bottom: 1px solid #d8dbe0;
+}
+
+.contact-section h2 {
+    color: #1b2a41;
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 25px;
 }
 
 .menu-link {
@@ -62,14 +118,130 @@
     gap: 8px;
     color: #b08d57;
     text-decoration: none;
-    margin-bottom: 12px;
     font-size: 15px;
     font-weight: bold;
+    transition: color 0.2s ease;
 }
 
 .menu-link:hover {
     color: #1b2a41;
 }
+
+
+/* ===========================================
+   Education / Experience / Skills Links
+   =========================================== */
+
+.resume-section-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 25px 0;
+}
+
+.resume-section-links a {
+    color: #1b2a41;
+    background-color: #eef1f5;
+    border: 1px solid #d8dbe0;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+}
+
+.resume-section-links a:hover {
+    background-color: #1b2a41;
+    color: #ffffff;
+}
+
+
+/* ===========================================
+   Resume Sections
+   =========================================== */
+
+.resume-section {
+    padding: 30px 0;
+    border-top: 1px solid #d8dbe0;
+    scroll-margin-top: 30px;
+}
+
+.resume-section h2 {
+    color: #1b2a41;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #b08d57;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.resume-section ul {
+    line-height: 1.6;
+}
+
+.resume-section li {
+    margin-bottom: 8px;
+}
+
+
+/* ===========================================
+   Experience
+   =========================================== */
+
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.experience-item h3 {
+    color: #1b2a41;
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.experience-date {
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* ===========================================
+   Skills
+   =========================================== */
+
+.skills-list {
+    columns: 2;
+    column-gap: 50px;
+}
+
+.skills-list li {
+    break-inside: avoid;
+    margin-bottom: 10px;
+}
+
+
+/* ===========================================
+   Back to Top
+   =========================================== */
+
+.back-to-top {
+    display: inline-block;
+    color: #b08d57;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.back-to-top:hover {
+    color: #1b2a41;
+}
+
+
+/* ===========================================
+   Footer
+   =========================================== */
 
 .resume-footer {
     background-color: #1b2a41;
@@ -77,11 +249,42 @@
     font-size: 13px;
 }
 
-.center {
-    text-align: center;
-}
 
-.mission-label {
-    font-weight: bold;
-    font-size: 20px;
+/* ===========================================
+   Mobile / Phone Layout
+   =========================================== */
+
+@media (max-width: 767px) {
+
+    .resume-main {
+        padding: 20px;
+    }
+
+    .profile-name {
+        font-size: 1.2rem;
+    }
+
+    .profile-pic {
+        width: 65px;
+        height: 65px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .resume-section-links {
+        flex-direction: column;
+    }
+
+    .resume-section-links a {
+        text-align: center;
+    }
+
+    .skills-list {
+        columns: 1;
+    }
+
 }
