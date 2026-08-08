@@ -1,364 +1,78 @@
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #eef1f5;
-    color: #1b2a41;
-}
-
-.common {
-    background-color: #ffffff;
-    border: 1px solid #d8dbe0;
-    border-radius: 4px;
-    position: absolute;
-    box-sizing: border-box;
-}
-
-.header {
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    height: 110px;
-    z-index: 5;
-    padding: 0;
-    background-color: #1b2a41;
-    color: #ffffff;
-    border-bottom: 3px solid #b08d57;
-}
-
-.subheader {
-    float: right;
-    font-size: 14px;
-}
-
-.subheader a {
-    color: #ffffff;
-}
-
-.leftmenu {
-    top: 130px;
-    left: 10px;
-    width: 130px;
-    bottom: 45px;
-    z-index: 1;
-    padding: 20px 10px;
-    background-color: #f7f8fa;
-}
-
-.mainbody {
-    top: 130px;
-    left: 150px;
-    right: 150px;
-    z-index: 4;
-    padding: 20px 24px 60px 24px;
-}
-
-.rightmenu {
-    top: 130px;
-    right: 10px;
-    width: 130px;
-    bottom: 45px;
-    padding: 20px 10px;
-    background-color: #f7f8fa;
-    font-size: 13px;
-}
-
-.footer {
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    height: 30px;
-    font-size: 11px;
-    color: #ffffff;
-    text-align: center;
-    padding-top: 10px;
-    position: fixed;
-    background-color: #1b2a41;
-    border-radius: 0 0 4px 4px;
-}
-
-.topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 0 20px;
-}
-
-.topbar-left {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.profile-pic {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #b08d57;
-}
-
-.profile-name {
-    color: white;
-    font-weight: bold;
-    font-size: 1.6rem;
-}
-
-.topbar-nav {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.topbar-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.topbar-nav a.active {
-    color: #b08d57;
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-.topbar-nav a:hover {
-    color: #b08d57;
-}
-
-.divider {
-    color: white;
-}
-
-.menu-link {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #b08d57;
-    text-decoration: none;
-    margin-bottom: 12px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.menu-link:hover {
-    color: #1b2a41;
-}
-
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #eef1f5;
-    color: #1b2a41;
-}
-
-.common {
-    background-color: #ffffff;
-    border: 1px solid #d8dbe0;
-    border-radius: 4px;
-    position: absolute;
-    box-sizing: border-box;
-}
-
-.header {
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    height: 110px;
-    z-index: 5;
-    padding: 0;
-    background-color: #1b2a41;
-    color: #ffffff;
-    border-bottom: 3px solid #b08d57;
-}
-
-.subheader {
-    float: right;
-    font-size: 14px;
-}
-
-.subheader a {
-    color: #ffffff;
-}
-
-.leftmenu {
-    top: 130px;
-    left: 10px;
-    width: 130px;
-    bottom: 45px;
-    z-index: 1;
-    padding: 20px 10px;
-    background-color: #f7f8fa;
-}
-
-.mainbody {
-    top: 130px;
-    left: 150px;
-    right: 150px;
-    z-index: 4;
-    padding: 20px 24px 60px 24px;
-}
-
-.rightmenu {
-    top: 130px;
-    right: 10px;
-    width: 130px;
-    bottom: 45px;
-    padding: 20px 10px;
-    background-color: #f7f8fa;
-    font-size: 13px;
-}
-
-.footer {
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    height: 30px;
-    font-size: 11px;
-    color: #ffffff;
-    text-align: center;
-    padding-top: 10px;
-    position: fixed;
-    background-color: #1b2a41;
-    border-radius: 0 0 4px 4px;
-}
-
-.topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 0 20px;
-}
-
-.topbar-left {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.profile-pic {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #b08d57;
-}
-
-.profile-name {
-    color: white;
-    font-weight: bold;
-    font-size: 1.6rem;
-}
-
-.topbar-nav {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.topbar-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.topbar-nav a.active {
-    color: #b08d57;
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-.topbar-nav a:hover {
-    color: #b08d57;
-}
-
-.divider {
-    color: white;
-}
-
-.menu-link {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #b08d57;
-    text-decoration: none;
-    margin-bottom: 12px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.menu-link:hover {
-    color: #1b2a41;
-}
-
 /* ===========================================
-   Responsive layout for mobile / narrow screens
+   Resume page - Bootstrap-based layout
+   Custom color/spacing rules only.
+   Bootstrap's grid handles all responsiveness.
    =========================================== */
-@media (max-width: 768px) {
 
-    .common {
-        position: static;
-        width: auto;
-        top: auto;
-        left: auto;
-        right: auto;
-        bottom: auto;
-        border-radius: 0;
-        margin: 0 0 15px 0;
-    }
+.resume-navbar {
+    background-color: #1b2a41;
+    border-bottom: 3px solid #b08d57;
+    padding: 12px 0;
+}
 
-    .header {
-        height: auto;
-        padding: 15px 0;
-    }
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #b08d57;
+}
 
-    .topbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-        padding: 0 15px;
-    }
+.profile-name {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
 
-    .topbar-left {
-        gap: 10px;
-    }
+.resume-navbar .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+}
 
-    .profile-pic {
-        width: 60px;
-        height: 60px;
-    }
+.resume-navbar .nav-link.active,
+.resume-navbar .nav-link:hover {
+    color: #b08d57;
+}
 
-    .profile-name {
-        font-size: 1.2rem;
-    }
+.resume-body {
+    background-color: #eef1f5;
+    padding: 30px 15px 60px 15px;
+}
 
-    .topbar-nav {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
+.resume-side-panel {
+    background-color: #f7f8fa;
+    border: 1px solid #d8dbe0;
+    border-radius: 4px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+}
 
-    .leftmenu,
-    .rightmenu {
-        width: auto;
-        padding: 15px;
-    }
+.resume-main {
+    background-color: #ffffff;
+    border: 1px solid #d8dbe0;
+    border-radius: 4px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
 
-    .mainbody {
-        padding: 15px;
-    }
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #b08d57;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: bold;
+}
 
-    .footer {
-        position: static;
-        margin-top: 15px;
-        border-radius: 0;
-    }
+.menu-link:hover {
+    color: #1b2a41;
+}
 
-    body {
-        padding-bottom: 0;
-    }
+.resume-footer {
+    background-color: #1b2a41;
+    color: #ffffff;
+    font-size: 13px;
 }
