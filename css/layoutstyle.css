@@ -300,4 +300,11 @@
 .resume-navbar .navbar-nav {
     flex-direction: row;
 }
+.resume-navbar .navbar-nav {
+        gap: 12px;
+    }
 
+    .resume-navbar .nav-link {
+        font-size: 12px;
+        padding: 4px 8px !important;
+    }
